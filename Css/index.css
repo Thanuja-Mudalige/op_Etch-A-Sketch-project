@@ -18,7 +18,7 @@ html,body{
 }
 
 .main div{
-    width: 6.25%;
+    width: calc(100% / var(--size));
     aspect-ratio: 1/1;
 }
 
