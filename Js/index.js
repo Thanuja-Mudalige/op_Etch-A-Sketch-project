@@ -10,3 +10,12 @@ for(let i=0;i<16;i++){
 }
 }
 makegrid();
+
+let divs=document.querySelectorAll('.main div');
+divs.forEach(
+    (div)=>{div.addEventListener('mouseenter',()=>{
+            div.classList.add('hover')
+}
+)
+}
+)

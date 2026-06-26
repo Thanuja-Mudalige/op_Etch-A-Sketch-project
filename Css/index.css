@@ -21,3 +21,7 @@ html,body{
     width: 6.25%;
     aspect-ratio: 1/1;
 }
+
+.hover{
+    background-color: gray;
+}
