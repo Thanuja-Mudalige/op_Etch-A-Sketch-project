@@ -23,5 +23,14 @@ html,body{
 }
 
 .hover{
-    background-color: gray;
+    background-color:#282b30;
+    opacity: 50%;
+}
+.hoverleveltwo{
+    background-color:#282b30;
+    opacity: 75%
+}
+.hoverlevelthree{
+    background-color:#282b30;
+    opacity: 100%
 }
