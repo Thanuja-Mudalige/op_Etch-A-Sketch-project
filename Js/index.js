@@ -7,7 +7,7 @@ for(let i=0;i<size;i++){
     for(let j=0;j<size;j++){
         let divsingle = document.createElement("div");
         maincontainer.appendChild(divsingle);
-         divsingle.textContent = `${i},${j}`;
+        
     }
 }
 listnerattach();
@@ -20,17 +20,14 @@ divs.forEach(
     (div)=>{div.addEventListener('mouseenter',(e)=>{
         let count = Number(e.target.dataset.hits || 0);
         count++;
+        if(count>10){
+            count=10;
+        }
+        
         e.target.dataset.hits = count;
-        if(count==1){
-            div.classList.add('hover');}
-        else if(count==2){
-            div.classList.remove('hover');
-            div.classList.add('hoverleveltwo');
-        }
-        else{
-            div.classList.remove('hover','hoverleveltwo');
-            div.classList.add('hoverlevelthree');
-        }
+        e.target.style.setProperty('--count',count);
+        e.target.classList.add('hover');
+        
 }
 )
 }

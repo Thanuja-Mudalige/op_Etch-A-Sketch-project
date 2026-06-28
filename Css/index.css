@@ -5,6 +5,7 @@ html,body{
     width: 100%;
     justify-content: center;
     align-items: center;
+    background-color: #ffc8f9;
 }
 
 .main{
@@ -14,23 +15,30 @@ html,body{
     align-items: center;
     width: 40%;
     aspect-ratio: 1/1;
+    border: 3px solid grey;
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px black;
     
 }
 
 .main div{
     width: calc(100% / var(--size));
     aspect-ratio: 1/1;
+    
 }
 
 .hover{
     background-color:#282b30;
-    opacity: 50%;
+    opacity: calc(var(--count) * 0.1);
 }
-.hoverleveltwo{
-    background-color:#282b30;
-    opacity: 75%
-}
-.hoverlevelthree{
-    background-color:#282b30;
-    opacity: 100%
+
+.changesize{
+    margin-bottom: 20px;
+    font-size:13px;
+    background-color: #ffc8f9;
+    border: 5px solid whitesmoke;
+    padding:6px;
+    border-radius: 5px;
+    font-weight: bold;
 }
